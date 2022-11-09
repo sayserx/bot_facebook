@@ -11,7 +11,7 @@ login({ appState: JSON.parse(fs.readFileSync('cookie.json','utf8')) }, (err, api
     if (err) return console.error(err);
 
 
-if (message.body === "12") {
+if (message.body === "!!") {
    fs.readFile('./number.txt', 'utf8', (err, data) => {
    console.log (message)
    var lines = data.split('\n');
